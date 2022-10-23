@@ -57,7 +57,7 @@ with open('cx_Oracle_async/__init__.py','w',encoding='utf-8') as f:
 
 setup(
     name="cx_Oracle_async", 
-    version=version,
+    version=0,
     author="WEN",
     description=description,
     long_description=''.join(long_description_lines),
