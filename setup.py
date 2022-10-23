@@ -48,7 +48,7 @@ with open('cx_Oracle_async/__init__.py','r',encoding='utf-8') as f:
 
 for line in init_content:
     if line == "__version__ = ''\n":
-        long_description_lines_copy.append(f"__version__ = '{version}'\n")
+        long_description_lines_copy.append(f"__version__ = '{0}'\n")
     else:
         long_description_lines_copy.append(line)
 
