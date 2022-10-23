@@ -34,15 +34,7 @@ for kw in (' - GitHub', ' - GoodManWEN'):
 html = BeautifulSoup(rget(release , headers).text ,'lxml')
 logger.info(f"description: {description}")
 
-#
-with open('tagname','r',encoding='utf-8') as f:
-    version = f.read()
-if ':' in version:
-    version = version[:version.index(':')].strip()
-version = version.strip()
-logger.info(f"version: {version}")
 
-#
 with open('README.md','r',encoding='utf-8') as f:
     long_description_lines = f.readlines()
 
@@ -70,7 +62,7 @@ setup(
     description=description,
     long_description=''.join(long_description_lines),
     long_description_content_type="text/markdown",
-    url="https://github.com/GoodManWEN/cx_Oracle_async",
+    url="https://github.com/nikkolya/cx_Oracle_async",
     packages = find_packages(),
     install_requires = get_install_requires('requirements.txt'),
     classifiers=[
